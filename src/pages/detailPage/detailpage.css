@@ -1,3 +1,11 @@
+.imgDetailContainer {
+    text-align: center;
+}
+
+.imgDetail {
+    height: 50vh;
+}
+
 .imgBack {
     height: 64px;
 }

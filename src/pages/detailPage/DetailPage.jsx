@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Nav from '../../components/nav/Nav'
 import axios from 'axios'
 import { useParams, Link } from 'react-router-dom'
+import './detailpage.css'
 
 function DetailPage() {
     const dataId = useParams();
@@ -33,7 +34,9 @@ function DetailPage() {
                     beerData ?
                         (
                             <>
-                                <img src={beerData.image_url} alt="" className='imgDetail' />
+                                <div className='imgDetailContainer'>
+                                    <img src={beerData.image_url} alt="" className='imgDetail' />
+                                </div>
                                 <h2>{beerData.name}</h2>
                                 <h3>{beerData.tagline}</h3>
                                 <div className='pDetails'>
