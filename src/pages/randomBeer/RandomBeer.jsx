@@ -1,9 +1,12 @@
 import React from 'react'
+import Nav from '../../components/nav/Nav'
 
 function RandomBeer() {
-  return (
-    <div>RandomBeer</div>
-  )
+    return (
+        <>
+            <Nav />
+        </>
+    )
 }
 
 export default RandomBeer

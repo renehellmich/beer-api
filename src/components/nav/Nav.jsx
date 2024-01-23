@@ -1,9 +1,12 @@
 import React from 'react'
+import navPic from '../../assets/bier_1.png'
 
 function Nav() {
-  return (
-    <div>Nav</div>
-  )
+    return (
+        <nav className='navBar'>
+            <img src={navPic} alt="" />
+        </nav>
+    )
 }
 
 export default Nav

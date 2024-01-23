@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MainContainer() {
+function MainContainer({api, string}) {
   return (
     <div>MainContainer</div>
   )
