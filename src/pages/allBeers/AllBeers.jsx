@@ -48,7 +48,7 @@ function AllBeers() {
                 })
                 )
                 : (
-                    <p>Loading ...</p>
+                    <p className='loadingPage'>Loading ...</p>
                 )
             }
             <Nav />

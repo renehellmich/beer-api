@@ -51,7 +51,7 @@ function DetailPage() {
                                 <Link to={'/allbeers'}><img src='../../src/assets/Back.png' alt="" className='imgBack' /></Link>
                             </>)
                         : (
-                            <p> loading .... </p>
+                            <p className='loadingPage'> loading .... </p>
                         )
                 }
             </section>
