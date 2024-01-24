@@ -1,13 +1,14 @@
 .productCard {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 25% 75%;
     gap: 1rem;
-    padding: 1rem;
+    padding: 2rem var(--padding-global);
 }
 
 .productImg {
-    height: 200px;
+    height: 320px;
     padding: 0 1rem;
+    margin: 0 auto;
 }
 
 .productCardInnerDiv {
@@ -16,3 +17,43 @@
     justify-content: center;
     gap: 1rem;
 }
+
+.h2BeerName {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+}
+.h3BeerTag {
+    font-size: 1.5rem;
+    color: var(--color-yellow);
+    font-weight: 900;
+}
+.pContributed {
+    font-size: 1.25rem;
+}
+
+.linkButtonDetails {
+    text-decoration: none;
+    color: white;
+    background: var(--color-yellow);
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem 2rem;
+    border-radius: 1.5rem
+}
+
+.sideStick {
+    width: calc(100% - 2 * var(--padding-global));
+    margin: 0 auto;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.loadingPage {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+

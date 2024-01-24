@@ -1,9 +1,43 @@
+.scDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 4rem;
+
+}
+
 .imgDetailContainer {
     text-align: center;
 }
 
 .imgDetail {
     height: 50vh;
+}
+
+.h2DetailPage {
+    color: #333333;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
+.h3DetailPage {
+    color: var(--color-yellow);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.divDetails {
+    display: flex;
+    justify-content: space-between;
+}
+.pDetails {
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+.pDetailsDescription {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .imgBack {

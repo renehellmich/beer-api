@@ -33,23 +33,25 @@ function DetailPage() {
                 {
                     beerData ?
                         (
-                            <>
+                            <section className='scDetail'>
                                 <div className='imgDetailContainer'>
                                     <img src={beerData.image_url} alt="" className='imgDetail' />
                                 </div>
-                                <h2>{beerData.name}</h2>
-                                <h3>{beerData.tagline}</h3>
-                                <div className='pDetails'>
-                                    <p>First brewed:</p>
-                                    <p>{beerData.first_brewed}</p>
+                                <h2 className='h2DetailPage'>{beerData.name}</h2>
+                                <h3 className='h3DetailPage'>{beerData.tagline}</h3>
+                                <div>
+                                    <div className='divDetails'>
+                                        <p className='pDetails'>First brewed:</p>
+                                        <p className='pDetails'>{beerData.first_brewed}</p>
+                                    </div>
+                                    <div className='divDetails'>
+                                        <p className='pDetails'>Attenuation level:</p>
+                                        <p className='pDetails'>{beerData.attenuation_level}</p>
+                                    </div>
                                 </div>
-                                <div className='pDetails'>
-                                    <p>Attenuation level:</p>
-                                    <p>{beerData.attenuation_level}</p>
-                                </div>
-                                <p>{beerData.description}</p>
+                                <p className='pDetailsDescription'>{beerData.description}</p>
                                 <Link to={'/allbeers'}><img src='../../src/assets/Back.png' alt="" className='imgBack' /></Link>
-                            </>)
+                            </section>)
                         : (
                             <p className='loadingPage'> loading .... </p>
                         )

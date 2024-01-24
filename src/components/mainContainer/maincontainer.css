@@ -1,0 +1,29 @@
+.scMainPage {
+    width: 100vw;
+    padding: var(--padding-global);
+    display: flex;
+    flex-direction: column;
+}
+
+.imgMainPage {
+    width: 100%;
+}
+
+.linkMainPage {
+    background: var(--color-yellow);
+}
+.LinkTo {
+    text-decoration: none;
+}
+.pLinkTo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .5rem
+}
+.mainPageDescription {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}

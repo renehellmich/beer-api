@@ -36,13 +36,13 @@ function AllBeers() {
                         <div key={index} className='productCard'>
                             <img src={beer.image_url} alt="" className='productImg' />
                             <div className='productCardInnerDiv'>
-                                <h2>{beer.name}</h2>
-                                <h3>{beer.tagline}</h3>
-                                <p>Created by: {beer.contributed_by.slice(0, beer.contributed_by.indexOf("<"))}</p>
-                                <Link to={`/allbeers/${beer._id}`}><button className='buttonDetails'></button>Detail</Link>
+                                <h2 className='h2BeerName'>{beer.name}</h2>
+                                <h3 className='h3BeerTag'>{beer.tagline}</h3>
+                                <p className='pContributed'>Created by: {beer.contributed_by.slice(0, beer.contributed_by.indexOf("<"))}</p>
+                                <Link to={`/allbeers/${beer._id}`} className='linkButtonDetails'><button className='buttonDetails'></button>Detail</Link>
                             </div>
                         </div>
-                        <hr></hr>
+                        <hr className='sideStick'></hr>
                         </>
                     )
                 })

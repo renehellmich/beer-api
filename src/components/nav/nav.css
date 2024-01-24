@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background: var(--color-yellow);
+    /* height: var(--nav-height); */
+    padding: .5rem 0;
+}
+
+#imgNav {
+    background: white;
+    height: var(--nav-height);
+    border-radius: var(--nav-height);
+    
+}

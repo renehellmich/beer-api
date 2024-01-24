@@ -5,5 +5,7 @@
 }
 
 #root {
-  
+  --color-yellow: #ffca41;
+  --padding-global: 1rem;
+  --nav-height: 4rem;
 }
